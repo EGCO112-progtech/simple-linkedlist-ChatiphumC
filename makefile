@@ -1,8 +1,8 @@
 compile: main.c 
-	 gcc main.c -o ming
+	 gcc main.c -o atom
 
-run: ming
-	 ./ming
+run: atom
+	 ./atom
 
-clean: ming
-	 rm ming
+clean: atom
+	 rm atom
