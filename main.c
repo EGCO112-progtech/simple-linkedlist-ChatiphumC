@@ -43,11 +43,11 @@ int main(int argc, const char * argv[]) {
     d.next = &a;
     d.value = 2;
     head = &d;
-
-    // printf("before 1st node : %d\n", head ->value );
-    // printf("1st node : %d\n", head ->next->value );
-    // printf("2nd node : %d\n", head ->next->next->value );
-    // printf("3rd node : %d\n", head ->next->next->next->value );
+    
+    printf("before 1st node : %d\n", head ->value );
+    printf("1st node : %d\n", head ->next->value );
+    printf("2nd node : %d\n", head ->next->next->value );
+    printf("3rd node : %d\n", head ->next->next->next->value );
 
     typedef struct node* NodePtr;
     NodePtr tmp=head; //add temp value to faciliate
@@ -55,22 +55,22 @@ int main(int argc, const char * argv[]) {
         
     /*  Exercise III Use loop to print everything */
 
-    /*int i,n=4;
+    int i,n=4;
     for(i=0;i<n;i++){
         printf("%d\n", tmp->value);
         tmp = tmp->next;
         //if(tmp->next == NULL) break;
-    }*/
+    }
     
     tmp = head; // reset temp to head
 
    /*  Exercise IV change to while loop!! (you can use NULL to help) */
        
-    /*while(tmp != NULL){
+    while(tmp != NULL){
         printf("%5d", tmp->value);
         tmp = tmp->next;
     }
-    printf("\n");*/
+    printf("\n");
     
     /*  Exercise V Use malloc to create all nodes, instead of create a struct!!
          //use a loop to help
